@@ -1,0 +1,53 @@
+/**
+ * @desc 一些常用的混合方法
+ */
+
+// !Transitions 
+.transition(@transition) {
+    -webkit-transition: @transition; 
+    -moz-transition: @transition;
+	-o-transition: @transition;
+	-ms-transition: @transition;
+	transition: @transition;
+}
+
+.transition-delay(@transition-delay) {
+	-webkit-transition-delay: @transition-delay;
+	-moz-transition-delay: @transition-delay;
+	-o-transition-delay: @transition-delay;
+	-ms-transition-delay: @transition-delay;
+	transition-delay: @transition-delay;
+}
+
+// !Animations 
+.animation (@name, @duration, @delay, @function) {
+	-webkit-animation: @name @duration @delay @function;
+	-moz-animation: @name @duration @delay @function;
+	-o-animation: @name @duration @delay @function;
+	-ms-animation: @name @duration @delay @function;
+	animation: @name @duration @delay @function;
+}
+
+.animation-name (@animation-name) {
+	-webkit-animation-name: @animation-name;
+	-moz-animation-name: @animation-name;
+	-ms-animation-name: @animation-name;
+	-o-animation-name: @animation-name;
+	animation-name: @animation-name;
+}
+
+.animation-timing-function (@animation-timing-function) {
+	-webkit-animation-timing-function: @animation-timing-function;
+	-moz-animation-timing-function: @animation-timing-function;
+	-ms-animation-timing-function: @animation-timing-function;
+	-o-animation-timing-function: @animation-timing-function;
+	animation-timing-function: @animation-timing-function;
+}
+
+.animation-duration (@animation-duration) {
+	-webkit-animation-duration: @animation-duration;
+	-moz-animation-duration: @animation-duration;
+	-ms-animation-duration: @animation-duration;
+	-o-animation-duration: @animation-duration;
+	animation-duration: @animation-duration;
+}
