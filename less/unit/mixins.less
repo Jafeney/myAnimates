@@ -20,7 +20,7 @@
 }
 
 // !Animations 
-.animation (@name, @duration, @delay, @function) {
+.animation(@name, @duration, @delay, @function) {
 	-webkit-animation: @name @duration @delay @function;
 	-moz-animation: @name @duration @delay @function;
 	-o-animation: @name @duration @delay @function;
@@ -28,7 +28,7 @@
 	animation: @name @duration @delay @function;
 }
 
-.animation-name (@animation-name) {
+.animation-name(@animation-name) {
 	-webkit-animation-name: @animation-name;
 	-moz-animation-name: @animation-name;
 	-ms-animation-name: @animation-name;
@@ -36,7 +36,7 @@
 	animation-name: @animation-name;
 }
 
-.animation-timing-function (@animation-timing-function) {
+.animation-timing-function(@animation-timing-function) {
 	-webkit-animation-timing-function: @animation-timing-function;
 	-moz-animation-timing-function: @animation-timing-function;
 	-ms-animation-timing-function: @animation-timing-function;
@@ -44,10 +44,130 @@
 	animation-timing-function: @animation-timing-function;
 }
 
-.animation-duration (@animation-duration) {
+.animation-duration(@animation-duration) {
 	-webkit-animation-duration: @animation-duration;
 	-moz-animation-duration: @animation-duration;
 	-ms-animation-duration: @animation-duration;
 	-o-animation-duration: @animation-duration;
 	animation-duration: @animation-duration;
 }
+
+.animation-delay(@animation-delay) {
+	-webkit-animation-delay:@animation-delay;
+	-moz-animation-delay:@animation-delay;
+	-ms-animation-delay:@animation-delay;
+	-o-animation-delay:@animation-delay;
+	animation-delay:@animation-delay;
+}
+
+.animation-iteration-count(@animation-iteration-count) {
+	-webkit-animation-iteration-count: @animation-iteration-count;
+	-moz-animation-iteration-count: @animation-iteration-count;
+	-ms-animation-iteration-count: @animation-iteration-count;
+	-o-animation-iteration-count: @animation-iteration-count;
+	animation-iteration-count: @animation-iteration-count;
+}
+
+.animation-fill-mode(@animation-fill-mode) {
+	-webkit-animation-fill-mode: @animation-fill-mode;
+	-moz-animation-fill-mode: @animation-fill-mode;
+	-ms-animation-fill-mode: @animation-fill-mode;
+	-o-animation-fill-mode: @animation-fill-mode;
+	animation-fill-mode: @animation-fill-mode;
+}
+
+// !Transformations 
+.rotate(@degrees) {
+	-webkit-transform: rotate(@degrees);
+	-moz-transform: rotate(@degrees);
+	-ms-transform: rotate(@degrees);
+	-o-transform: rotate(@degrees);
+}
+
+.scale(@ratio) {
+	-webkit-transform: scale(@ratio);
+	-moz-transform: scale(@ratio);
+	-ms-transform: scale(@ratio);
+	-o-transform: scale(@ratio);
+	transform: scale(@ratio);
+}
+
+.translate(@x, @y) {
+	-webkit-transform: translate(@x, @y);
+	-moz-transform: translate(@x, @y);
+	-ms-transform: translate(@x, @y);
+	-o-transform: translate(@x, @y);
+	transform: translate(@x, @y);
+}
+
+.skew(@x, @y) {
+	-webkit-transform: skew(@x, @y);
+	-moz-transform: skew(@x, @y);
+	-ms-transform: skewX(@x) skewY(@y);
+	-o-transform: skew(@x, @y);
+	transform: skew(@x, @y);
+	-webkit-backface-visibility: hidden;
+}
+
+.translate3d(@x,@y,@z) {
+	-webkit-transform: translate3d(@x,@y,@z);
+	-moz-transform: translate3d(@x,@y,@z);
+	-ms-transform: translate3d(@x,@y,@z);
+	-o-transform: translate3d(@x,@y,@z);
+	transform: translate3d(@x,@y,@z);
+}
+
+.perspective(@value: 1000) {
+	-webkit-perspective: @value;
+	-moz-perspective: @value;
+	-ms-perspective: @value;
+	-o-perspective: @value;
+	perspective: @value;
+}
+
+.transform-origin(@x, @y) {
+	-webkit-transform-origin: @x @y;
+	-moz-transform-origin: @x @y;
+	-ms-transform-origin: @x @y;
+	-o-transform-origin: @x @y;
+	transform-origin: @x @y;
+}
+
+.transform (...) {
+	-webkit-transform: @arguments;
+	-moz-transform: @arguments;
+	-ms-transform: @arguments;
+	-o-transform: @arguments;
+	transform: @arguments;
+}
+
+// !Backface visibility
+.backface-visibility(@visibility) {
+	-webkit-backface-visibility: @visibility;
+	-moz-backface-visibility: @visibility;
+	-ms-backface-visibility: @visibility;
+	-o-backface-visibility: @visibility;
+	backface-visibility: @visibility;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

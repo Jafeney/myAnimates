@@ -15,7 +15,7 @@
                 |- wobble
                 |- wiggle
             |- Bouncing entrances
-                |- bouceIn
+                |- bounceIn
                 |- bounceInUp
                 |- bounceInDown
                 |- bounceInLeft
@@ -100,7 +100,7 @@
                 |- zoomOutUp
                 |- zoomOutDown
                 |- zoomOutLeft
-                |- zoomOutDown
+                |- zoomOutRight
         |- comb 
             |- 
         animates.less 

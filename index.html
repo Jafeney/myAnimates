@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="email=no" name="format-detection" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<script type="text/javascript">
+	! function(a) {
+	    function b() {
+	        a.rem = f.getBoundingClientRect().width / 16, f.style.fontSize = a.rem + "px"
+	    }
+	    var c, d = a.navigator.appVersion.match(/iphone/gi) ? a.devicePixelRatio : 1,
+	        e = 1 / d,
+	        f = document.documentElement,
+	        g = document.createElement("meta");
+	    if (a.dpr = d, a.addEventListener("resize", function() {
+	            clearTimeout(c), c = setTimeout(b, 300)
+	        }, !1), a.addEventListener("pageshow", function(a) {
+	            a.persisted && (clearTimeout(c), c = setTimeout(b, 300))
+	        }, !1), f.setAttribute("data-dpr", d), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + e + ", maximum-scale=" + e + ", minimum-scale=" + e + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g);
+	    else {
+	        var h = document.createElement("div");
+	        h.appendChild(g), document.write(h.innerHTML)
+	    }
+	    b()
+	}(window);
+	</script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>demo</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="./build/css/animates.css" />
+
 </head>
 <body>
-	<header id="header" class="">
-		
-	</header>
+	<div id="animate-box"></div>
+
+	<div id="animate-btns"></div>
+
+	<script type="text/javascript" src="http://m.beibei.com/assets/libs/zepto.min.js?v=6ec1e34eceb26faf0b345bf4b15cee4c"></script>
+	<script>
+		var animates = [
+		    ['bounce','flash','pulse','rubberBand','shake','tada','swing','wobble','wiggle'],
+		    ['bounceIn','bounceInUp','bounceInDown','bounceInLeft','bounceInRight'],
+		    ['bounceOut','bounceOutUp','bounceOutDown','bounceOutLeft','bounceOutRight'],
+		    ['dropUp','dropDown'],
+		    ['easeInLeft','easeInRight'],
+		    ['easeOutLeft','easeOutRight'],
+		    ['flip','flipInX','flipInY','flipOutX','flipoutY'],
+		    ['fadeIn','fadeInUp','fadeInDown','fadeInLeft','fadeInRight','fadeInUpBig','fadeInDownBig','fadeInLeftBig','fadeInRightBig'],
+		    ['fadeOut','fadeOutUp','fadeOutDown','fadeOutLeft','fadeOutRight','fadeOutUpBig','fadeOutDownBig','fadeOutLeftBig','fadeOutRightBig'],
+		    ['lightSpeedIn','lightSpeedOut'],
+		    ['rotateIn','rotateInLeft','rotateInUpLeft','rotateInUpRight','rotateInDownLeft','rotateInDownRight'],
+		    ['rotateOut','rotateOutLeft','rotateOutUpLeft','rotateOutUpRight','rotateOutDownLeft','rotateOutDownRight'],
+		    ['scaleIn','scaleInBig'],
+		    ['scaleOut','scaleOutBig'],
+		    ['hingeLeft','hingeRight','rollIn','rollOut'],
+		    ['zoomIn','zoomInUp','zoomInDown','zoomInLeft','zoomInRight'],
+		    ['zoomOut','zoomOutUp','zoomOutDown','zoomOutLeft','zoomOutRight']
+		];
+
+		for(var i=0,len=animates.length;i<len;i++){
+			var _ul = $("<ul></ul>");
+			for(var j=0,leng=animates[i].length;j<leng;j++){
+				_ul.append("<li>"+animates[i][j]+"</li>");
+			}
+			$('#animate-btns').append(_ul);
+		}
+
+		$('li').on('click',function(){
+			var _animate = $(this).text();
+
+			var _newEle = $("<img class='animated  "+_animate+"' src='http://b2.hucdn.com//upload/hmp/1603/02/30354889262737_750x300.jpg' />");
+
+			$('#animate-box').html(_newEle);
+			
+
+		});
+	</script>
 </body>
 </html>

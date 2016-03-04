@@ -6,4 +6,62 @@
 
 @charset "utf-8";
 
-@import "fadeIn.less";
+@import "unit/variables.less";
+@import "unit/mixins.less";
+
+// !Animated Timer Class
+.animated {
+	.animation-duration(1s);
+	.animation-fill-mode(both);
+}
+
+.animated-fast {
+	.animation-duration(.5s);
+	.animation-fill-mode(both);
+}
+
+.animated-zing {
+	.animation-duration(.3s);
+	.animation-fill-mode(both);
+}
+
+/**
+ * @desc !Animate Classes
+ */
+// !Fading entrances 
+@import "keyframes/fadeIn.less";
+@import "keyframes/fadeInUp.less";
+
+// !Fading exits
+@import "keyframes/fadeOut.less";
+
+@g-base: 46.785rem;
+
+// just for this demo
+
+div{
+	height: 300rem/@g-base;
+}
+
+img{
+	text-align: center;
+	font-size: 50rem/@g-base;
+	color: #666;
+	display: block;
+	margin:0 auto;
+	width:100%;
+}
+li {
+	list-style: none;
+	font-size: 25rem/@g-base;
+	display: inline-block;
+	vertical-align: top;
+	line-height: 25rem/@g-base;
+	background: #ccc;
+	color: #666;
+	border-radius: 5rem/@g-base;
+	padding:10rem/@g-base 20rem/@g-base;
+	margin:5px;
+}
+
+
