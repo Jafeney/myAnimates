@@ -1,0 +1,67 @@
+/**
+ * 一些预设的屏幕适配
+ */
+/* !PRIMARY Landscape phone to portrait tablet 
+----------------------------------------*/
+@media (max-width: 767px) {
+  /* Styles */
+  /* !Basic Page Styles
+------------------------------------ */
+}
+/* !Mobile Devices Landscape Specific
+----------------------------------------*/
+@media (min-width: 480px) and (max-width: 767px) {
+  /* Styles */
+}
+/* !PRIMARY Landscape phones and down 
+---------------------------------------------------------------------*/
+@media (max-width: 480px) {
+  /* Styles */
+}
+/* !PRIMARY Portrait tablet to landscape and desktop 
+------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Styles */
+}
+/* !iPads (portrait and landscape) 
+---------------------------------------------------------------------------------------*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+/* !iPads (landscape) 
+------------------------ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* !iPads (portrait)
+----------------------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+/* !Slightly Wide Desktop Display
+------------------------------------*/
+@media (min-width: 980px) {
+  /* Styles */
+}
+/* !Large Desktop Displays 
+----------------------------------------*/
+@media (min-width: 1200px) {
+  /* Styles */
+}
+/* !Retina Displays (Tip: Best used only for image replacement)
+------------------------------------------------------------------ */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 21), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* Styles */
+}
+/* !iPad Retina Displays (Tip: Best used only for image replacement)
+------------------------------------------------------------------ */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 21), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) and (max-device-width: 1024px) {
+  /* Styles */
+}
+/* !iPhone Retina Displays (Tip: Best used only for image replacement)
+------------------------------------------------------------------ */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 21), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) and (max-device-width: 480px) {
+  /* Styles */
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaXQvbWVkaWEubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7OztBQWdCQSxRQVYwQjs7Ozs7OztBQWlCMUIsUUFQMEIsdUJBQXVCOzs7OztBQWNqRCxRQVAwQjs7Ozs7QUFlMUIsUUFSMEIsdUJBQXVCOzs7OztBQWVqRCx3QkFQa0QsOEJBQWdDOzs7OztBQWlCbEYsd0JBUkEsOEJBQ0EsK0JBQThCOzs7OztBQWlCOUIsd0JBUkEsOEJBQ0EsK0JBQTZCOzs7OztBQWM3QixRQVAwQjs7Ozs7QUFhMUIsUUFOMkI7Ozs7O0FBbUIzQix3QkFabUQscURBQ0Ysa0RBQ0YsaURBQ0gsNkNBQ0gsMENBQ0E7Ozs7O0FBcUJ6Qyx3QkFibUQscURBQ0Ysa0RBQ0YsaURBQ0gsNkNBQ0gsMENBRXpDLDRCQUErQjs7Ozs7QUFxQi9CLHdCQWJtRCxxREFDRixrREFDRixpREFDSCw2Q0FDSCwwQ0FFekMsNEJBQThCIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXHJcbiAqIOS4gOS6m+mihOiuvueahOWxj+W5lemAgumFjVxyXG4gKi9cclxuXHJcbi8qICFQUklNQVJZIExhbmRzY2FwZSBwaG9uZSB0byBwb3J0cmFpdCB0YWJsZXQgXHJcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xyXG5AbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcclxuLyogU3R5bGVzICovXHJcblxyXG4vKiAhQmFzaWMgUGFnZSBTdHlsZXNcclxuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXHJcblxyXG59XHJcblxyXG4vKiAhTW9iaWxlIERldmljZXMgTGFuZHNjYXBlIFNwZWNpZmljXHJcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xyXG5AbWVkaWEgKG1pbi13aWR0aDogNDgwcHgpIGFuZCAobWF4LXdpZHRoOiA3NjdweCkge1xyXG4vKiBTdHlsZXMgKi9cclxuXHJcbn1cclxuXHJcbi8qICFQUklNQVJZIExhbmRzY2FwZSBwaG9uZXMgYW5kIGRvd24gXHJcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA0ODBweCkge1xyXG4vKiBTdHlsZXMgKi9cclxuXHJcbn1cclxuXHJcbi8qICFQUklNQVJZIFBvcnRyYWl0IHRhYmxldCB0byBsYW5kc2NhcGUgYW5kIGRlc2t0b3AgXHJcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXHJcbkBtZWRpYSAobWluLXdpZHRoOiA3NjhweCkgYW5kIChtYXgtd2lkdGg6IDk3OXB4KSB7XHJcbi8qIFN0eWxlcyAqL1xyXG5cclxufVxyXG5cclxuXHJcbi8qICFpUGFkcyAocG9ydHJhaXQgYW5kIGxhbmRzY2FwZSkgXHJcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi1kZXZpY2Utd2lkdGggOiA3NjhweCkgYW5kIChtYXgtZGV2aWNlLXdpZHRoIDogMTAyNHB4KSB7XHJcbi8qIFN0eWxlcyAqL1xyXG5cclxufVxyXG5cclxuLyogIWlQYWRzIChsYW5kc2NhcGUpIFxyXG4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi9cclxuQG1lZGlhIG9ubHkgc2NyZWVuIFxyXG5hbmQgKG1pbi1kZXZpY2Utd2lkdGggOiA3NjhweCkgXHJcbmFuZCAobWF4LWRldmljZS13aWR0aCA6IDEwMjRweCkgXHJcbmFuZCAob3JpZW50YXRpb24gOiBsYW5kc2NhcGUpIHtcclxuLyogU3R5bGVzICovXHJcblxyXG59XHJcblxyXG4vKiAhaVBhZHMgKHBvcnRyYWl0KVxyXG4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSAqL1xyXG5AbWVkaWEgb25seSBzY3JlZW4gXHJcbmFuZCAobWluLWRldmljZS13aWR0aCA6IDc2OHB4KSBcclxuYW5kIChtYXgtZGV2aWNlLXdpZHRoIDogMTAyNHB4KSBcclxuYW5kIChvcmllbnRhdGlvbiA6IHBvcnRyYWl0KSB7XHJcbi8qIFN0eWxlcyAqL1xyXG5cclxufVxyXG5cclxuLyogIVNsaWdodGx5IFdpZGUgRGVza3RvcCBEaXNwbGF5XHJcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXHJcbkBtZWRpYSAobWluLXdpZHRoOiA5ODBweCkge1xyXG4vKiBTdHlsZXMgKi9cclxuXHJcbn1cclxuXHJcbi8qICFMYXJnZSBEZXNrdG9wIERpc3BsYXlzIFxyXG4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKi9cclxuQG1lZGlhIChtaW4td2lkdGg6IDEyMDBweCkge1xyXG4vKiBTdHlsZXMgKi9cclxufVxyXG5cclxuLyogIVJldGluYSBEaXNwbGF5cyAoVGlwOiBCZXN0IHVzZWQgb25seSBmb3IgaW1hZ2UgcmVwbGFjZW1lbnQpXHJcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSAqL1xyXG5AbWVkaWEgXHJcbm9ubHkgc2NyZWVuIGFuZCAoLXdlYmtpdC1taW4tZGV2aWNlLXBpeGVsLXJhdGlvOiAyKSxcclxub25seSBzY3JlZW4gYW5kICggbWluLS1tb3otZGV2aWNlLXBpeGVsLXJhdGlvOiAyKSxcclxub25seSBzY3JlZW4gYW5kICgtby1taW4tZGV2aWNlLXBpeGVsLXJhdGlvOiAyMSksXHJcbm9ubHkgc2NyZWVuIGFuZCAoIG1pbi1kZXZpY2UtcGl4ZWwtcmF0aW86IDIpLFxyXG5vbmx5IHNjcmVlbiBhbmQgKCBtaW4tcmVzb2x1dGlvbjogMTkyZHBpKSxcclxub25seSBzY3JlZW4gYW5kICggbWluLXJlc29sdXRpb246IDJkcHB4KSB7XHJcbi8qIFN0eWxlcyAqL1xyXG5cclxufVxyXG5cclxuLyogIWlQYWQgUmV0aW5hIERpc3BsYXlzIChUaXA6IEJlc3QgdXNlZCBvbmx5IGZvciBpbWFnZSByZXBsYWNlbWVudClcclxuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXHJcbkBtZWRpYSBcclxub25seSBzY3JlZW4gYW5kICgtd2Via2l0LW1pbi1kZXZpY2UtcGl4ZWwtcmF0aW86IDIpLFxyXG5vbmx5IHNjcmVlbiBhbmQgKCBtaW4tLW1vei1kZXZpY2UtcGl4ZWwtcmF0aW86IDIpLFxyXG5vbmx5IHNjcmVlbiBhbmQgKC1vLW1pbi1kZXZpY2UtcGl4ZWwtcmF0aW86IDIxKSxcclxub25seSBzY3JlZW4gYW5kICggbWluLWRldmljZS1waXhlbC1yYXRpbzogMiksXHJcbm9ubHkgc2NyZWVuIGFuZCAoIG1pbi1yZXNvbHV0aW9uOiAxOTJkcGkpLFxyXG5vbmx5IHNjcmVlbiBhbmQgKCBtaW4tcmVzb2x1dGlvbjogMmRwcHgpXHJcbmFuZCAobWF4LWRldmljZS13aWR0aDogMTAyNHB4KSB7XHJcbi8qIFN0eWxlcyAqL1xyXG5cclxufVxyXG5cclxuLyogIWlQaG9uZSBSZXRpbmEgRGlzcGxheXMgKFRpcDogQmVzdCB1c2VkIG9ubHkgZm9yIGltYWdlIHJlcGxhY2VtZW50KVxyXG4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi9cclxuQG1lZGlhIFxyXG5vbmx5IHNjcmVlbiBhbmQgKC13ZWJraXQtbWluLWRldmljZS1waXhlbC1yYXRpbzogMiksXHJcbm9ubHkgc2NyZWVuIGFuZCAoIG1pbi0tbW96LWRldmljZS1waXhlbC1yYXRpbzogMiksXHJcbm9ubHkgc2NyZWVuIGFuZCAoLW8tbWluLWRldmljZS1waXhlbC1yYXRpbzogMjEpLFxyXG5vbmx5IHNjcmVlbiBhbmQgKCBtaW4tZGV2aWNlLXBpeGVsLXJhdGlvOiAyKSxcclxub25seSBzY3JlZW4gYW5kICggbWluLXJlc29sdXRpb246IDE5MmRwaSksXHJcbm9ubHkgc2NyZWVuIGFuZCAoIG1pbi1yZXNvbHV0aW9uOiAyZHBweClcclxuYW5kIChtYXgtZGV2aWNlLXdpZHRoOiA0ODBweCkge1xyXG4vKiBTdHlsZXMgKi9cclxuXHJcbn1cclxuXHJcblxyXG5cclxuIl0sImZpbGUiOiJ1bml0L21lZGlhLmNzcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */
