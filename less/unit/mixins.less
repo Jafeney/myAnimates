@@ -117,6 +117,14 @@
 	transform: translate3d(@x,@y,@z);
 }
 
+.scale3d(@x,@y,@z) {
+	-webkit-transform: scale3d(@x,@y,@z);
+	-moz-transform: scale3d(@x,@y,@z);
+	-ms-transform: scale3d(@x,@y,@z);
+	-o-transform: scale3d(@x,@y,@z);
+    transform: scale3d(@x,@y,@z)
+}
+
 .perspective(@value: 1000) {
 	-webkit-perspective: @value;
 	-moz-perspective: @value;

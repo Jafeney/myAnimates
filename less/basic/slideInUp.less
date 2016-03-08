@@ -1,0 +1,62 @@
+@import "../unit/variables.less";
+@import "../unit/mixins.less";
+
+@-webkit-keyframes slideInUp {
+    0% {
+        .transform(translate3d(0,100%,0));
+        visibility: visible
+    }
+
+    100% {
+        .transform(translate3d(0,0,0));
+    }
+}
+
+@-moz-keyframes slideInUp {
+    0% {
+        .transform(translate3d(0,100%,0));
+        visibility: visible
+    }
+
+    100% {
+        .transform(translate3d(0,0,0));
+    }
+}
+
+@-ms-keyframes slideInUp {
+    0% {
+        .transform(translate3d(0,100%,0));
+        visibility: visible
+    }
+
+    100% {
+        .transform(translate3d(0,0,0));
+    }
+}
+
+@-o-keyframes slideInUp {
+    0% {
+        .transform(translate3d(0,100%,0));
+        visibility: visible
+    }
+
+    100% {
+        .transform(translate3d(0,0,0));
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        .transform(translate3d(0,100%,0));
+        visibility: visible
+    }
+
+    100% {
+        .transform(translate3d(0,0,0));
+    }
+}
+
+
+.slideInUp {
+	.animation-name(slideInUp);
+}

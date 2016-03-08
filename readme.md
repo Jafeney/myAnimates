@@ -8,12 +8,13 @@
                 |- bounce
                 |- flash
                 |- pulse
-                |- rubberBand
+                |- rubberBand ＊
                 |- shake
                 |- tada 
                 |- swing
                 |- wobble
                 |- wiggle
+                |- jello ＊
             |- Bouncing entrances
                 |- bounceIn
                 |- bounceInUp
@@ -40,7 +41,7 @@
                 |- flipInX
                 |- flipInY
                 |- flipOutX
-                |- flipoutY
+                |- flipOutY
             |- Fading entrances
                 |- fadeIn
                 |- fadeInUp
@@ -66,14 +67,12 @@
                 |- lightSpeedOut
             |- Rotating entrances
                 |- rotateIn
-                |- rotateInLeft
                 |- rotateInUpLeft
                 |- rotateInUpRight
                 |- rotateInDownLeft
                 |- rotateInDownRight
             |- Rotating exits
                 |- rotateOut
-                |- rotateOutLeft
                 |- rotateOutUpLeft
                 |- rotateOutUpRight
                 |- rotateOutDownLeft
@@ -84,23 +83,33 @@
             |- Scaling exits
                 |- scaleOut
                 |- scaleOutBig
+            |- Sliding entrances
+                |- slideInUp ＊
+                |- slideInDown ＊
+                |- slideInLeft ＊
+                |- slideInRight ＊
+            |- Sliding exits
+                |- slideOutUp ＊
+                |- slideOutDown ＊
+                |- slideOutLeft ＊
+                |- slideOutRight ＊
             |- Specials
                 |- hingeLeft
                 |- hingeRight
                 |- rollIn
                 |- rollOut
             |- Zoom entrances
-                |- zoomIn 
-                |- zoomInUp 
-                |- zoomInDown 
-                |- zoomInLeft 
-                |- zoomInRight 
+                |- zoomIn ＊
+                |- zoomInUp ＊
+                |- zoomInDown ＊
+                |- zoomInLeft ＊
+                |- zoomInRight ＊
             |- zoom exits
-                |- zoomOut
-                |- zoomOutUp
-                |- zoomOutDown
-                |- zoomOutLeft
-                |- zoomOutRight
+                |- zoomOut ＊
+                |- zoomOutUp ＊
+                |- zoomOutDown ＊
+                |- zoomOutLeft ＊
+                |- zoomOutRight ＊
         |- comb 
             |- 
         animates.less 

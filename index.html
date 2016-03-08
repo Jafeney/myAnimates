@@ -30,30 +30,34 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>demo</title>
 	<link rel="stylesheet" href="./build/css/animates.css" />
-
+	<link rel="stylesheet" href="./build/css/demo.css" /O
 </head>
 <body>
-	<div id="animate-box"></div>
+	<div id="J_animate-box" class="animate-box">
+		<img class='animated scaleIn' src='http://b2.hucdn.com//upload/hmp/1603/02/30354889262737_750x300.jpg' />
+	</div>
 
-	<div id="animate-btns"></div>
+	<div id="J_animate-btns" class="animate-btns"></div>
 
 	<script type="text/javascript" src="http://m.beibei.com/assets/libs/zepto.min.js?v=6ec1e34eceb26faf0b345bf4b15cee4c"></script>
 	<script>
 		var animates = [
-		    ['bounce','flash','pulse','rubberBand','shake','tada','swing','wobble','wiggle'],
+		    ['bounce','flash','pulse','rubberBand','shake','tada','swing','wobble','wiggle','jello'],
 		    ['bounceIn','bounceInUp','bounceInDown','bounceInLeft','bounceInRight'],
 		    ['bounceOut','bounceOutUp','bounceOutDown','bounceOutLeft','bounceOutRight'],
 		    ['dropUp','dropDown'],
 		    ['easeInLeft','easeInRight'],
 		    ['easeOutLeft','easeOutRight'],
-		    ['flip','flipInX','flipInY','flipOutX','flipoutY'],
+		    ['flip','flipInX','flipInY','flipOutX','flipOutY'],
 		    ['fadeIn','fadeInUp','fadeInDown','fadeInLeft','fadeInRight','fadeInUpBig','fadeInDownBig','fadeInLeftBig','fadeInRightBig'],
 		    ['fadeOut','fadeOutUp','fadeOutDown','fadeOutLeft','fadeOutRight','fadeOutUpBig','fadeOutDownBig','fadeOutLeftBig','fadeOutRightBig'],
 		    ['lightSpeedIn','lightSpeedOut'],
-		    ['rotateIn','rotateInLeft','rotateInUpLeft','rotateInUpRight','rotateInDownLeft','rotateInDownRight'],
-		    ['rotateOut','rotateOutLeft','rotateOutUpLeft','rotateOutUpRight','rotateOutDownLeft','rotateOutDownRight'],
+		    ['rotateIn','rotateInUpLeft','rotateInUpRight','rotateInDownLeft','rotateInDownRight'],
+		    ['rotateOut','rotateOutUpLeft','rotateOutUpRight','rotateOutDownLeft','rotateOutDownRight'],
 		    ['scaleIn','scaleInBig'],
 		    ['scaleOut','scaleOutBig'],
+		    ['slideInUp','slideInDown','slideInLeft','slideInRight'],
+		    ['slideOutUp','slideOutDown','slideOutLeft','slideOutRight'],
 		    ['hingeLeft','hingeRight','rollIn','rollOut'],
 		    ['zoomIn','zoomInUp','zoomInDown','zoomInLeft','zoomInRight'],
 		    ['zoomOut','zoomOutUp','zoomOutDown','zoomOutLeft','zoomOutRight']
@@ -64,24 +68,15 @@
 			for(var j=0,leng=animates[i].length;j<leng;j++){
 				_ul.append("<li>"+animates[i][j]+"</li>");
 			}
-			$('#animate-btns').append(_ul);
+			$('#J_animate-btns').append(_ul);
 		}
 
 		$('li').on('click',function(){
 			var _animate = $(this).text();
 			var _newEle = $("<img class='animated  "+_animate+"' src='http://b2.hucdn.com//upload/hmp/1603/02/30354889262737_750x300.jpg' />");
-			$('#animate-box').html(_newEle);
+			$('#J_animate-box').html(_newEle);
 		});
 
-		$(window).scroll(function(){
-			if($(window).scrollTop()>0){
-				$('#animate-box').addClass('fixed');
-				$('#animate-btns').addClass('pt');
-			}else{
-				$('#animate-box').removeClass('fixed');
-				$('#animate-btns').removeClass('pt');
-			}
-		});
 	</script>
 </body>
 </html>
