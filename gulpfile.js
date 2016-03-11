@@ -1,5 +1,7 @@
 var gulp = require('gulp'),
     less = require('gulp-less'),
+    rename = require('gulp-rename'),
+    autoprefixer = require('gulp-autoprefixer'),
     cssmin = require('gulp-minify-css'),
     sourcemaps = require('gulp-sourcemaps'),
     notify = require('gulp-notify'),
@@ -17,8 +19,11 @@ gulp.task('Less', function() {
         .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
         .pipe(sourcemaps.init())
         .pipe(less())
+        .pipe(autoprefixer('last 2 versions'))
         .pipe(sourcemaps.write())
+        .pipe(gulp.dest(CSS_DEST))
         .pipe(cssmin())  //等发布的时候再进行压缩处理
+        .pipe(rename({'suffix':'.min'}))
         .pipe(gulp.dest(CSS_DEST))
         .pipe(livereload())
 });

@@ -1,61 +1,14 @@
-@import "../unit/variables.less";
-@import "../unit/mixins.less";
-
-@-webkit-keyframes slideOutLeft {
-    0% {
-        .transform(translate3d(0,0,0));
-    }
-
-    100% {
-        visibility: hidden;
-        .transform(translate3d(-100%,0,0));
-    }
-}
-
-@-moz-keyframes slideOutLeft {
-    0% {
-        .transform(translate3d(0,0,0));
-    }
-
-    100% {
-        visibility: hidden;
-        .transform(translate3d(-100%,0,0));
-    }
-}
-
-@-ms-keyframes slideOutLeft {
-    0% {
-        .transform(translate3d(0,0,0));
-    }
-
-    100% {
-        visibility: hidden;
-        .transform(translate3d(-100%,0,0));
-    }
-}
-
-@-o-keyframes slideOutLeft {
-    0% {
-        .transform(translate3d(0,0,0));
-    }
-
-    100% {
-        visibility: hidden;
-        .transform(translate3d(-100%,0,0));
-    }
-}
-
 @keyframes slideOutLeft {
     0% {
-        .transform(translate3d(0,0,0));
+        transform: translate3d(0,0,0);
     }
 
     100% {
         visibility: hidden;
-        .transform(translate3d(-100%,0,0));
+        transform: translate3d(-100%,0,0);
     }
 }
 
 .slideOutLeft {
-	.animation-name(slideOutLeft);
+	animation-name: slideOutLeft;
 }

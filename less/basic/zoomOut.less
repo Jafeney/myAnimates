@@ -1,66 +1,3 @@
-@import "../unit/variables.less";
-@import "../unit/mixins.less";
-
-@-webkit-keyframes zoomOut {
-    0% {
-        opacity: 1
-    }
-
-    50% {
-        opacity: 0;
-        .transform(scale3d(.3,.3,.3));
-    }
-
-    100% {
-        opacity: 0
-    }
-}
-
-@-moz-keyframes zoomOut {
-    0% {
-        opacity: 1
-    }
-
-    50% {
-        opacity: 0;
-        .transform(scale3d(.3,.3,.3));
-    }
-
-    100% {
-        opacity: 0
-    }
-}
-
-@-ms-keyframes zoomOut {
-    0% {
-        opacity: 1
-    }
-
-    50% {
-        opacity: 0;
-        .transform(scale3d(.3,.3,.3));
-    }
-
-    100% {
-        opacity: 0
-    }
-}
-
-@-o-keyframes zoomOut {
-    0% {
-        opacity: 1
-    }
-
-    50% {
-        opacity: 0;
-        .transform(scale3d(.3,.3,.3));
-    }
-
-    100% {
-        opacity: 0
-    }
-}
-
 @keyframes zoomOut {
     0% {
         opacity: 1
@@ -68,7 +5,7 @@
 
     50% {
         opacity: 0;
-        .transform(scale3d(.3,.3,.3));
+        transform: scale3d(.3,.3,.3);
     }
 
     100% {
@@ -77,5 +14,5 @@
 }
 
 .zoomOut {
-	.animation-name(zoomOut);
+	animation-name: zoomOut;
 }
